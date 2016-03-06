@@ -1,0 +1,80 @@
+<!-- <div class="" data-ng-controller="LinksController"> -->
+  <div class="col-md-3" data-ng-controller="LinksController">
+    <div class="nav-side-menu" data-role="navigation" ng-controller="HeaderController as hdrctr">
+      <div class="brand">Brand Logo</div>
+      <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+      
+      <div class="menu-list">
+        
+        <ul id="menu-content" class="menu-content collapse out">
+          <li ui-route="/{{item.link}}" ng-class="{active: $uiRoute}" ng-repeat="item in hdrctr.menus.main">
+            <a mean-token="item.link" ui-sref='{{item.link}}'>{{item.title}}</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-9">
+    <h1>Example view from your new awesome package</h1>
+    <h2>Package: {{package.name}}</h2>
+    <ol>
+      <li>
+        <a href="/api/links/example/anyone" target="_self">Server route that anyone can access</a>
+      </li>
+      <li>
+        <a href="/api/links/example/auth" target="_self">Server route that requires authentication</a>
+      </li>
+      <li>
+        <a href="/api/links/example/admin" target="_self">Server route that requires admin user</a>
+      </li>
+      <li>
+        <a href="/api/links/example/render" target="_self">Raw Html rendering example from using swig</a>
+      </li>
+    </ol>
+    <h3><img src="/links/assets/img/logo.png" /></h3>
+    </br>
+    <p class="alert alert-info">You can find your package in /packages/links</p>
+    </br>
+    <p class="alert alert-warning">MEAN versions prior to 0.3.2 will be in /node_modules/links</p>
+    </br>
+    <h3><a href="http://learn.mean.io">Documentation</a></h3>
+    </br>
+  </div>
+<!-- </div> -->
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<!-- <div class="nav-side-menu" data-role="navigation" ng-controller="HeaderController as hdrctr">
+  <div class="brand">Brand Logo</div>
+  <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+  
+  <div class="menu-list">
+    
+    <ul id="menu-content" class="menu-content collapse out">
+      <li ui-route="/{{item.link}}" ng-class="{active: $uiRoute}" ng-repeat="item in hdrctr.menus.main">
+        <a mean-token="item.link" ui-sref='{{item.link}}'>{{item.title}}</a>
+      </li>
+    </ul>
+  </div>
+</div> -->
+<!--
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<div class="nav-side-menu">
+  <div class="brand">Brand Logo</div>
+  <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+  
+  <div class="menu-list">
+    
+    <ul id="menu-content" class="menu-content collapse out">
+      <li>
+        <a href="#">
+          <i class="fa fa-dashboard fa-lg"></i> Dashboard
+        </a>
+      </li>
+      <li  data-toggle="collapse" data-target="#products" class="collapsed active">
+        <a href="#"><i class="fa fa-gift fa-lg"></i> UI Elements <span class="arrow"></span></a>
+      </li>
+      <li data-toggle="collapse" data-target="#service" class="collapsed">
+        <a href="#"><i class="fa fa-globe fa-lg"></i> Services <span class="arrow"></span></a>
+      </li>
+    </ul>
+  </div>
+</div> -->
